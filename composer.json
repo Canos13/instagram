@@ -1,0 +1,21 @@
+{
+    "name": "cano/instagram",
+    "description": "creando un instagram con PHP, MYSQL,  POO y MVC",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Cano\\Instagram\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Canos13",
+            "email": "canomsergio13@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "bramus/router": "dev-master"
+    }
+}

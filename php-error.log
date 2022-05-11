@@ -1,0 +1,6 @@
+[11-May-2022 20:04:04 Europe/Berlin] Hello, errors!!!
+[11-May-2022 20:04:04 Europe/Berlin] PHP Warning:  Undefined array key "GET" in D:\xampp\htdocs\instagram\vendor\bramus\router\src\Bramus\Router\Router.php on line 292
+[11-May-2022 20:04:10 Europe/Berlin] Hello, errors!!!
+[11-May-2022 20:04:10 Europe/Berlin] PHP Warning:  Undefined array key "GET" in D:\xampp\htdocs\instagram\vendor\bramus\router\src\Bramus\Router\Router.php on line 292
+[11-May-2022 20:05:27 Europe/Berlin] Hello, errors!!!
+[11-May-2022 20:06:48 Europe/Berlin] Hello, errors!!!
