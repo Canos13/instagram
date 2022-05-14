@@ -3,15 +3,21 @@
     $router = new \Bramus\Router\Router();
     session_start();
 
+    /* Loading the .env file. */
+    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__.'/../config/');
+    $dotenv->load();
+
+    /* Creating a route for the home page. */
     $router->get('/', function(){
         echo "Inicio";
     });
 
+    /* Creating a route for the login page. */
     $router->get('/login', function(){
         echo "login Page";
     });
 
-    $router->get('/auth', function(){
+    $router->post('/auth', function(){
         echo "autenticando...";
     });
 
@@ -19,7 +25,7 @@
         echo "signup page";
     });
 
-    $router->get('/register', function(){
+    $router->post('/register', function(){
         echo "new user";
     });
 
@@ -27,7 +33,7 @@
         echo "home page";
     });
 
-    $router->get('/publish', function(){
+    $router->post('/publish', function(){
         echo "new publish";
     });
 
@@ -35,7 +41,7 @@
         echo "my profile";
     });
 
-    $router->get('/addLike', function(){
+    $router->post('/addLike', function(){
         echo "addLike";
     });
 
@@ -43,8 +49,8 @@
         echo "logout";
     });
 
-    $router->get('/profile/{username}', function(){
-        echo "other profile";
+    $router->get('/profile/{username}', function($username){
+        echo "hello $username";
     });
 
     $router->run();
