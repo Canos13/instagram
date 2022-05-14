@@ -16,6 +16,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "bramus/router": "dev-master"
+        "bramus/router": "dev-master",
+        "vlucas/phpdotenv": "5.4.x-dev"
     }
 }

@@ -3,4 +3,14 @@
 [11-May-2022 20:04:10 Europe/Berlin] Hello, errors!!!
 [11-May-2022 20:04:10 Europe/Berlin] PHP Warning:  Undefined array key "GET" in D:\xampp\htdocs\instagram\vendor\bramus\router\src\Bramus\Router\Router.php on line 292
 [11-May-2022 20:05:27 Europe/Berlin] Hello, errors!!!
-[11-May-2022 20:06:48 Europe/Berlin] Hello, errors!!!
+[11-/* The Controller class is a parent class for all controllers. It has a render method that renders
+a view. */
+May-2022 20:06:48 Europe/Berlin] Hello, errors!!!
+[11-May-2022 20:23:56 Europe/Berlin] Hello, errors!!!
+[11-May-2022 21:01:53 Europe/Berlin] Hello, errors!!!
+[11-May-2022 21:02:11 Europe/Berlin] Hello, errors!!!
+[11-May-2022 21:02:11 Europe/Berlin] PHP Parse error:  syntax error, unexpected string content "", expecting "-" or identifier or variable or number in D:\xampp\htdocs\instagram\src\lib\routes.php on line 11
+[11-May-2022 21:02:12 Europe/Berlin] Hello, errors!!!
+[11-May-2022 21:02:12 Europe/Berlin] PHP Parse error:  syntax error, unexpected string content "", expecting "-" or identifier or variable or number in D:\xampp\htdocs\instagram\src\lib\routes.php on line 11
+[11-May-2022 21:02:36 Europe/Berlin] Hello, errors!!!
+[14-May-2022 16:25:33 Europe/Berlin] Hello, errors!!!
