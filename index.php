@@ -5,9 +5,9 @@
     ini_set('display_errors', FALSE);
     ini_set('logs_errors', TRUE);
     ini_set("error_log", "php-error.log");
-    error_log("Hello, errors!!!"); 
+    error_log("No hay errores, Cano!!!"); 
 
-    require 'vendor/autoload.php';
-    require 'src/lib/routes.php';
+    require('vendor/autoload.php');
+    require('src/lib/routes.php');
 
 ?>
