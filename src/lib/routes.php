@@ -1,11 +1,17 @@
 <?php
 
+    /* Importing the classes from the controllers folder. */
+    use Cano\Instagram\controllers\Signup;
+    use Cano\Instagram\controllers\Login;
+    use Cano\Instagram\controllers\Home;
+    /* use Cano\Instagram\lib\Controller; */
+
     $router = new \Bramus\Router\Router();
     session_start();
-
     /* Loading the .env file. */
     $dotenv = Dotenv\Dotenv::createImmutable(__DIR__.'/../config/');
     $dotenv->load();
+
 
     /* Creating a route for the home page. */
     $router->get('/', function(){
@@ -14,27 +20,36 @@
 
     /* Creating a route for the login page. */
     $router->get('/login', function(){
-        echo "login Page";
+        $controller = new Login;
+        $controller->render('login/index');
     });
 
     $router->post('/auth', function(){
-        echo "autenticando...";
+        $controller = new Login;
+        $controller->auth();
     });
 
+    /* Creating a route for the signup page. */
     $router->get('/signup', function(){
-        echo "signup page";
+        $controller = new Signup;
+        $controller->render('signup/index');
     });
 
     $router->post('/register', function(){
-        echo "new user";
+        $controller = new Signup;
+        $controller->register();
     });
 
     $router->get('/home', function(){
-        echo "home page";
+        $user = unserialize($_SESSION['user'] );
+        $controller = new Home($user);
+        $controller->index();
     });
 
     $router->post('/publish', function(){
-        echo "new publish";
+        $user = unserialize($_SESSION['user'] );
+        $controller = new Home($user);
+        $controller->store();
     });
 
     $router->get('/profile', function(){
